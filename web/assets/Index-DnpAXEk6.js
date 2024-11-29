@@ -1,4 +1,4 @@
-import{_ as ec}from"./index-LOxvEO2l.js";const nc=Vue.defineComponent({__name:"threeChild",setup(i){return(t,e)=>(Vue.openBlock(),Vue.createElementBlock("div"))}});/**
+import{_ as ec}from"./index-DC2p0gWU.js";const nc=Vue.defineComponent({__name:"threeChild",setup(i){return(t,e)=>(Vue.openBlock(),Vue.createElementBlock("div"))}});/**
  * @license
  * Copyright 2010-2024 Three.js Authors
  * SPDX-License-Identifier: MIT
