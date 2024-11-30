@@ -1,3 +1,3 @@
 {
-    "rewrites": [{ "source": "/:path*", "destination": "/index.html" }]
+    "rewrites": [{ "source": "/:path*", "destination": "https://wellsmitch.top/web/index.html" }]
   }
