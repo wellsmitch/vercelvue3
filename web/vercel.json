@@ -1,3 +1,8 @@
 {
-    "redirects": [{ "source": "/(.*)", "destination": "https://wellsmitch.top/web/" }]
-  }
+    "redirects": [
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
+    ]
+}
