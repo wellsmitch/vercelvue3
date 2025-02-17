@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+            border: 5px solid #908af9;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<script>
+    var resizeObserver = new ResizeObserver(function(entries, b,c) {
+        for (var entry in entries) {
+            console.log(entries);
+        }
+    });
+    var elbox1 = document.querySelector(".box1");
+    var elbox2 = document.querySelector(".box2");
+    resizeObserver.observe(elbox1);
+    resizeObserver.observe(elbox2);
+
+
+    const intersectionObserver = new IntersectionObserver(
+        function (entries) {
+            console.log('info:');
+            entries.forEach(item => {
+                console.log(item.target, item.intersectionRatio)
+            })
+        }, {
+            threshold: [0.5, 1]
+        });
+
+    intersectionObserver.observe( document.querySelector('.box1'));
+
+    new MutationObserver()
+</script>
+</body>
+</html>

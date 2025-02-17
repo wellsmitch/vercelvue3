@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>转身、遇见  加油、倩倩</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script src="js/vue.js"></script>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/yqx-animate.css">
+    <link rel="stylesheet" href="css/yqx.css">
+    <style>
+        .ddd {
+            width: 100%;
+            background-color: salmon;
+        }
+    </style>
+
+</head>
+<body>
+<div id="out" class="nr preview-content">
+    <div class="bgm-btn-wraper" style="display: block;" @touchstart.stop="handleTouchstart()">
+        <div class="bgm-btn rotate"
+             ref="musicRef"
+             :style="{'animation-play-state': musicPlay?'running': 'paused'}">
+            <audio ref="audioRef" loop="" muted="muted" src="./music/lmkq.mp3" autoplay=""
+                   preload=""></audio>
+        </div>
+    </div>
+    <section class="main-page h5">
+        <div class="yqx-container">
+            <ul class="edit_area_splitbar">
+                <div class="split-bar" style="animation-delay: 0.5s;"></div>
+                <div class="split-bar" style="animation-delay: 0.4s;"></div>
+                <div class="split-bar" style="animation-delay: 0.3s;"></div>
+                <div class="split-bar" style="animation-delay: 0.2s;"></div>
+                <div class="split-bar" style="animation-delay: 0.1s;"></div>
+                <div class="split-bar" style="animation-delay: 0.1s;"></div>
+                <div class="split-bar" style="animation-delay: 0.2s;"></div>
+                <div class="split-bar" style="animation-delay: 0.3s;"></div>
+                <div class="split-bar" style="animation-delay: 0.4s;"></div>
+                <div class="split-bar" style="animation-delay: 0.5s;"></div>
+            </ul>
+            <div class="heart-dot">
+                <svg xmlns:ev="http://www.w3.org/2001/xml-events" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="8614969715" x="0px" y="0px"
+                     width="100%" height="100%" viewBox="0 0 56.84 49.636" enable-background="new 0 0 56.84 49.636"
+                     xml:space="preserve" preserveAspectRatio="none" class="element svg-element">
+                    <path fill="#08A1EF"
+                          d="M28.487,10.847C21.13-6.364,0.18-2.348,0.08,17.628C0,33.538,27.699,46.784,28.531,49.636  C29.285,46.675,57,33.785,56.92,17.509C56.823-2.517,35.506-5.678,28.487,10.847z"
+                          style="fill: rgb(255, 177, 164);"></path>
+                </svg>
+            </div>
+            <ul class="edit_area">
+                <li>
+                    <div class="element-box">
+                        <img class="bg-gif-class" src="./img/w.gif" alt="">
+                    </div>
+                </li>
+                <li class="top-heart-container">
+                    <div class="element-box">
+                        <img class="top-heart-class" src="./img/top-heart.png" alt="">
+                    </div>
+                </li>
+                <div class="text-li text-li-1">最美的日子</div>
+                <div class="text-li text-li-2">最可爱的你</div>
+                <div class="text-li text-li-3">最快乐的相遇</div>
+                <div class="text-li text-li-4">最精彩的做自己</div>
+                <div class="text-li text-li-5">最好的的运气全给你</div>
+                <div class="text-li text-li-6">最好成绩属于你</div>
+            </ul>
+            <section class="layer page-1-section" id="layer:1585020417"
+                     style="position: absolute; width: 100%; height: 100%; z-index: 8; display: block;">
+                <div class="layer-box">
+                    <ul id="edit_area" class="layer-items edit_area  weebly-content-area weebly-area-active">
+                        <li id="inside_5731307" num="21" ctype="4" class="item item-comp"
+                            style="position: absolute; z-index: 21; opacity: 1; width: 27.5px; height: 27.5px; top: 260.5px; left: 281.5px; transform: rotateZ(0deg); display: block;"
+                            abs-pos="l-281.5-t-260.5-w-27.5-h-27.5" eqx-id="5731307" _tracker_click_="_tracker_click_">
+                            <div class="element-box"
+                                 style="width: 100%; height: 100%; top: 260.5px; left: 281.5px; color: rgb(103, 103, 103); transform: none; text-align: left; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); border-radius: 0px; padding: 0px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px; line-height: 1; z-index: auto; margin-top: 0px; margin-bottom: 0px; animation: 2s linear 0s infinite normal both running rotateIn;">
+                                <div class="element-box-contents" style="width: 100%; height: 100%; overflow: hidden;">
+                                    <img id="5731307" ctype="4" class="element comp_image editable-image"
+                                         style="display: block; width: 27.5px; height: 27.5px; margin-left: 0px; margin-top: 0px;"
+                                         draggable="false"
+                                         src="./img/hua.png"
+                                         _tracker_click_="_tracker_click_"></div>
+                            </div>
+                        </li>
+                        <li id="inside_9462640674" num="20" ctype="4" class="item item-comp"
+                            style="position: absolute; z-index: 20; opacity: 1; width: 27px; height: 27.5px; top: 112px; left: 31px; transform: rotateZ(0deg); display: block;"
+                            abs-pos="l-31-t-112-w-27-h-27.5" eqx-id="9462640674" _tracker_click_="_tracker_click_">
+                            <div class="element-box"
+                                 style="width: 100%; height: 100%; top: 112px; left: 31px; color: rgb(103, 103, 103); transform: none; text-align: left; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); border-radius: 0px; padding: 0px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px; line-height: 1; z-index: auto; margin-top: 0px; margin-bottom: 0px; animation: 2.5s linear 0s infinite normal both running rotateIn;">
+                                <div class="element-box-contents" style="width: 100%; height: 100%; overflow: hidden;">
+                                    <img id="9462640674" ctype="4" class="element comp_image editable-image"
+                                         style="display: block; width: 27px; height: 27.5px; margin-left: 0px; margin-top: 0px;"
+                                         draggable="false"
+                                         src="./img/hua.png"
+                                         _tracker_click_="_tracker_click_"></div>
+                            </div>
+                        </li>
+                        <li id="inside_2138424485" num="19" ctype="4" class="item item-comp"
+                            style="position: absolute; z-index: 19; opacity: 1; width: 210px; height: 37.1121px; top: 21.1855px; left: 54.5px; transform: rotateZ(0deg); display: block;"
+                            abs-pos="l-54.50000000000003-t-21.185451695639824-w-209.99999999999997-h-37.112068965517295"
+                            eqx-id="2138424485" _tracker_click_="_tracker_click_">
+                            <div class="element-box"
+                                 style="width: 100%; height: 100%; top: 21.1855px; left: 54.5px; color: rgb(103, 103, 103); transform: none; text-align: left; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); border-radius: 0px; padding: 0px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px; line-height: 1; z-index: auto; margin-top: 0px; margin-bottom: 0px; animation: 1.2s ease 1.4s 1 normal both running zoomIn;">
+                                <div class="element-box-contents" style="width: 100%; height: 100%; overflow: hidden;">
+                                    <img id="2138424485" ctype="4" class="element comp_image editable-image"
+                                         style="display: block; width: 210px; height: 37.7479px; margin-top: -0.317932px; margin-left: 0px;"
+                                         draggable="false"
+                                         src="./img/hua.png"
+                                         _tracker_click_="_tracker_click_"></div>
+                            </div>
+                        </li>
+                        <li id="inside_5933775018" num="18" ctype="4" class="item item-comp"
+                            style="position: absolute; z-index: 18; opacity: 1; width: 24.5px; height: 24.5px; top: 306px; left: 79.5px; transform: rotateZ(0deg); display: block;"
+                            abs-pos="l-79.5-t-306-w-24.5-h-24.5" eqx-id="5933775018" _tracker_click_="_tracker_click_">
+                            <div class="element-box"
+                                 style="width: 100%; height: 100%; top: 306px; left: 79.5px; color: rgb(103, 103, 103); transform: none; text-align: left; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); border-radius: 0px; padding: 0px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px; line-height: 1; z-index: auto; margin-top: 0px; margin-bottom: 0px; animation: 3s linear 0s infinite normal both running rotateIn;">
+                                <div class="element-box-contents" style="width: 100%; height: 100%; overflow: hidden;">
+                                    <img id="5933775018" ctype="4" class="element comp_image editable-image"
+                                         style="display: block; width: 24.5px; height: 24.5px; margin-left: 0px; margin-top: 0px;"
+                                         draggable="false"
+                                         src="./img/hua.png"
+                                         _tracker_click_="_tracker_click_"></div>
+                            </div>
+                        </li>
+                        <li id="inside_8442113297" num="17" ctype="4" class="item item-comp"
+                            style="position: absolute; z-index: 17; opacity: 1; width: 283.5px; height: 125.5px; top: 310px; left: 19px; transform: rotateZ(0deg); display: block;"
+                            abs-pos="l-19-t-310-w-283.5-h-125.5" eqx-id="8442113297" _tracker_click_="_tracker_click_">
+                            <div class="element-box"
+                                 style="width: 100%; height: 100%; top: 310px; left: 19px; color: rgb(103, 103, 103); transform: none; text-align: left; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); border-radius: 0px; padding: 0px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px; line-height: 1; z-index: auto; margin-top: 0px; margin-bottom: 0px; animation: 1.2s ease 1.5s 1 normal both running zoomIn;">
+                                <div class="element-box-contents" style="width: 100%; height: 100%; overflow: hidden;">
+                                    <img id="8442113297" ctype="4" class="element comp_image editable-image"
+                                         style="display: block; width: 283.5px; height: 125.5px; margin-left: 0px; margin-top: 0px;"
+                                         draggable="false"
+                                         src="./img/yehua.png"
+                                         _tracker_click_="_tracker_click_"></div>
+                            </div>
+                        </li>
+                        <li id="inside_545910890" num="16" ctype="4" class="item item-comp"
+                            style="position: absolute; z-index: 16; opacity: 1; width: 283.5px; height: 109.5px; top: 310px; left: 19px; transform: rotateZ(0deg); display: block;"
+                            abs-pos="l-19-t-310-w-283.5-h-109.5" eqx-id="545910890" _tracker_click_="_tracker_click_">
+                            <div class="element-box"
+                                 style="width: 100%; height: 100%; top: 310px; left: 19px; color: rgb(103, 103, 103); transform: none; text-align: left; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); border-radius: 0px; padding: 0px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px; z-index: auto; margin-top: 0px; margin-bottom: 0px; animation: 1.2s ease 1.5s 1 normal both running zoomIn;">
+                                <div class="element-box-contents" style="width: 100%; height: 100%; overflow: hidden;">
+                                    <img id="545910890" ctype="4" class="element comp_image editable-image"
+                                         style="display: block; width: 283.5px; height: 109.5px; margin-left: 0px; margin-top: 0px;"
+                                         draggable="false"
+                                         src="./img/yezi.png"
+                                         _tracker_click_="_tracker_click_"></div>
+                            </div>
+                        </li>
+                        <li id="inside_2345790673" num="15" ctype="4" class="item item-comp"
+                            style="position: absolute; z-index: 15; opacity: 1; width: 418px; height: 682px; top: -92.4093px; left: -44.5px; transform: rotateZ(0deg); display: block;"
+                            abs-pos="l--44.499999999999744-t--92.40930232558165-w-418-h-682" eqx-id="2345790673"
+                            _tracker_click_="_tracker_click_">
+                            <div class="element-box"
+                                 style="width: 100%; height: 100%; top: -92.4093px; left: -44.5px; color: rgb(103, 103, 103); transform: none; text-align: left; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); border-radius: 0px; padding: 0px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px; line-height: 1; z-index: auto; margin-top: 0px; margin-bottom: 0px; animation: 0.9s ease 0.9s 1 normal both running puffIn;">
+                                <div class="element-box-contents" style="width: 100%; height: 100%; overflow: hidden;">
+                                    <img id="2345790673" ctype="4" class="element comp_image editable-image"
+                                         style="display: block; width: 418px; height: 682.102px; margin-top: -0.0511034px; margin-left: 0px;"
+                                         draggable="false"
+                                         src="./img/circle-bg.png"
+                                         _tracker_click_="_tracker_click_"></div>
+                            </div>
+                        </li>
+                        <li id="inside_589761008" num="14" ctype="4" class="item item-comp"
+                            style="position: absolute; z-index: 14; opacity: 1; width: 320.5px; height: 480.5px; top: -20px; left: 0px; transform: rotateZ(0deg); display: block;"
+                            abs-pos="l-0-t-4-w-320.5-h-480.5" eqx-id="589761008" _tracker_click_="_tracker_click_">
+                            <div class="element-box"
+                                 style="width: 100%; height: 100%; top: 4px; left: 0px; color: rgb(103, 103, 103); transform: none; text-align: left; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); border-radius: 0px; padding: 0px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px; line-height: 1; z-index: auto; margin-top: 0px; margin-bottom: 0px; animation: 1.2s ease 1.5s 1 normal both running puffIn;">
+                                <div class="element-box-contents" style="width: 100%; height: 100%; overflow: hidden;">
+                                    <img id="589761008" ctype="4" class="element comp_image editable-image"
+                                         style="display: block; width: 320.5px; height: 480.5px; margin-left: 0px; margin-top: 0px;"
+                                         draggable="false"
+                                         src="./img/03.jpg"
+                                         _tracker_click_="_tracker_click_"></div>
+                            </div>
+                        </li>
+                        <li id="inside_8263764916" num="25" ctype="7" class="item item-comp"
+                            style="position: absolute; z-index: 25; opacity: 1; width: 320px; height: 46px; top: 428px; left: 0px; transform: rotateZ(0deg); display: block;"
+                            abs-pos="l-0-t-428-w-320-h-46" eqx-id="8263764916" _tracker_click_="_tracker_click_">
+                            <div class="element-box"
+                                 style="width: 100%; height: 100%; top: 428px; left: 0px; writing-mode: horizontal-tb; text-align: center; line-height: 1.5; font-size: 24px; background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); transform: none; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); border-radius: 0px; padding: 0px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px; text-decoration: none; font-weight: bold; z-index: auto; margin-top: 0px; margin-bottom: 0px; animation: 2.5s ease 8s infinite normal both running puffOut;">
+                                <div class="element-box-contents" style="width: 100%; height: 100%;">
+                                    <div id="8263764916" ctype="7" class="element flexo-new-text-comp"
+                                         style="padding: 5px; width: 100%; height: 100%; font-family: Y_hanyi_qihei35; font-size: 24px; writing-mode: horizontal-tb; cursor: default; min-height: inherit; letter-spacing: 0em;">
+                                        <span style="display: block;margin-top: 0px;margin-bottom: 0px;color: inherit;-ms-word-wrap:break-word;word-wrap: break-word; -webkit-user-select: auto;">倩倩 加油喔！</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="inside_4916671635" num="24" ctype="7" class="item item-comp"
+                            style="position: absolute; z-index: 24; opacity: 1; width: 320px; height: 46px; top: 428px; left: 0px; transform: rotateZ(0deg); display: block;"
+                            abs-pos="l-0-t-428-w-320-h-46" eqx-id="4916671635" _tracker_click_="_tracker_click_">
+                            <div class="element-box"
+                                 style="width: 100%; height: 100%; top: 428px; left: 0px; writing-mode: horizontal-tb; text-align: center; line-height: 1.5; font-size: 24px; background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); transform: none; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); border-radius: 0px; padding: 0px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px; text-decoration: none; font-weight: bold; z-index: auto; margin-top: 0px; margin-bottom: 0px; animation: 1.2s ease 8s 1 normal both running puffIn;">
+                                <div class="element-box-contents" style="width: 100%; height: 100%;">
+                                    <div id="4916671635" ctype="7" class="element flexo-new-text-comp"
+                                         style="padding: 5px; width: 100%; height: 100%; font-family: Y_hanyi_qihei35; font-size: 24px; writing-mode: horizontal-tb; cursor: default; min-height: inherit; letter-spacing: 0em;">
+                                        <span style="display: block;margin-top: 0px;margin-bottom: 0px;color: inherit;-ms-word-wrap:break-word;word-wrap: break-word; -webkit-user-select: auto;">倩倩 加油喔！</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li id="inside_491667163sasd5" num="24" ctype="7" class="item item-comp"
+                            style="position: absolute; z-index: 24; opacity: 1; width: 320px; height: 46px; top: 468px; left: 0px; transform: rotateZ(0deg); display: block;"
+                            abs-pos="l-0-t-428-w-320-h-46" eqx-id="4916671635" _tracker_click_="_tracker_click_">
+                            <div class="element-box"
+                                 style="width: 100%; height: 100%; top: 428px; left: 0px; writing-mode: horizontal-tb; text-align: center; line-height: 1.5; font-size: 24px; background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255); transform: none; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); border-radius: 0px; padding: 0px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px; text-decoration: none; font-weight: bold; z-index: auto; margin-top: 0px; margin-bottom: 0px; animation: 1.2s ease 8s 1 normal both running puffIn;">
+                                <div class="element-box-contents" style="width: 100%; height: 100%;">
+                                    <div id="4916671a635" ctype="7" class="element flexo-new-text-comp"
+                                         style="padding: 5px; width: 100%; height: 100%; font-family: Y_hanyi_qihei35; font-size: 24px; writing-mode: horizontal-tb; cursor: default; min-height: inherit; letter-spacing: 0em;">
+                                        <span style="display: block;margin-top: 0px;margin-bottom: 0px;color: inherit;-ms-word-wrap:break-word;word-wrap: break-word; -webkit-user-select: auto;font-size: 16px; color: #8b1313;">上滑有惊喜喔！</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </div>
+        <section class="u-arrow-bottom">
+            <div class="pre-wrap-bottom">
+                <div class="pre-box1">
+                    <div class="pre1"></div>
+                </div>
+                <div class="pre-box2">
+                    <div class="pre2"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="main-page h5">
+        <div class="yqx-container">
+            <ul class="edit_area_splitbar">
+                <div class="split-bar" style="animation-delay: 0.5s;"></div>
+                <div class="split-bar" style="animation-delay: 0.4s;"></div>
+                <div class="split-bar" style="animation-delay: 0.3s;"></div>
+                <div class="split-bar" style="animation-delay: 0.2s;"></div>
+                <div class="split-bar" style="animation-delay: 0.1s;"></div>
+                <div class="split-bar" style="animation-delay: 0.1s;"></div>
+                <div class="split-bar" style="animation-delay: 0.2s;"></div>
+                <div class="split-bar" style="animation-delay: 0.3s;"></div>
+                <div class="split-bar" style="animation-delay: 0.4s;"></div>
+                <div class="split-bar" style="animation-delay: 0.5s;"></div>
+            </ul>
+            <div class="heart-dot">
+                <svg xmlns:ev="http://www.w3.org/2001/xml-events" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="8614969715" x="0px" y="0px"
+                     width="100%" height="100%" viewBox="0 0 56.84 49.636" enable-background="new 0 0 56.84 49.636"
+                     xml:space="preserve" preserveAspectRatio="none" class="element svg-element">
+                    <path fill="#08A1EF"
+                          d="M28.487,10.847C21.13-6.364,0.18-2.348,0.08,17.628C0,33.538,27.699,46.784,28.531,49.636  C29.285,46.675,57,33.785,56.92,17.509C56.823-2.517,35.506-5.678,28.487,10.847z"
+                          style="fill: rgb(255, 177, 164);"></path>
+                </svg>
+            </div>
+            <ul class="edit_area">
+                <li>
+                    <div class="element-box">
+                        <img class="bg-gif-class" src="./img/w.gif" alt="">
+                    </div>
+                </li>
+                <li class="top-heart-container">
+                    <div class="element-box">
+                        <img class="top-heart-class" src="./img/top-heart.png" alt="">
+                    </div>
+                </li>
+
+                <li id="inside_9309888700" num="19" ctype="4" class="item item-comp"
+                    style="position: absolute; z-index: 19; opacity: 1; width: 176px; height: 31px; top: 373.194px; left: 50%; transform: translateX(-50%); display: block;"
+                    abs-pos="l-71.50000000000001-t-373.194072385295-w-176-h-31" eqx-id="9309888700"
+                    _tracker_click_="_tracker_click_">
+                    <div class="element-box"
+                         style="width: 100%; height: 100%; top: 373.194px; left: 71.5px; color: rgb(103, 103, 103); transform: none; text-align: left; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); border-radius: 0px; padding: 0px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px; line-height: 1; z-index: auto; margin-top: 0px; margin-bottom: 0px; animation: 1.2s ease 1.4s 1 normal both running zoomIn;">
+                        <div class="element-box-contents" style="width: 100%; height: 100%; overflow: hidden;"><img
+                                id="9309888700" ctype="4" class="element comp_image editable-image"
+                                style="display: block; width: 176px; height: 31.6364px; margin-top: -0.318182px; margin-left: 0px;"
+                                draggable="false"
+                                src="./img/iay7bxnsgh.png"
+                                _tracker_click_="_tracker_click_"></div>
+                    </div>
+                </li>
+                <li id="inside_9253991803" num="18" ctype="4" class="item item-comp"
+                    style="    position: absolute;
+    z-index: 18;
+    opacity: 1;
+    width: 310px;
+    height: 137px;
+    top: 410.048px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;"
+                    abs-pos="l-5.999999999999972-t-379.04761904761904-w-310-h-137" eqx-id="9253991803"
+                    _tracker_click_="_tracker_click_">
+                    <div class="element-box"
+                         style="width: 100%; height: 100%; top: 379.048px; left: 6px; color: rgb(103, 103, 103); transform: none; text-align: left; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); border-radius: 0px; padding: 0px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px; line-height: 1; z-index: auto; margin-top: 0px; margin-bottom: 0px; animation: 1.2s ease 1.5s 1 normal both running zoomIn;">
+                        <div class="element-box-contents" style="width: 100%; height: 100%; overflow: hidden;"><img
+                                id="9253991803" ctype="4" class="element comp_image editable-image"
+                                style="display: block; width: 80%; height: auto; margin: 0 auto;"
+                                draggable="false"
+                                src="./img/yehua.png"
+                                _tracker_click_="_tracker_click_"></div>
+                    </div>
+                </li>
+                <li id="inside_93098s88700" num="19" ctype="4" class="item item-comp"
+                    style="    position: absolute;
+    z-index: 19;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    font-size: 32px;"
+                    abs-pos="l-71.50000000000001-t-373.194072385295-w-176-h-31" eqx-id="9309888700"
+                    _tracker_click_="_tracker_click_">
+                    <div class="element-box"
+                         style="width: 100%; height: 100%; top: 373.194px; left: 71.5px; color: #fff; transform: none; text-align: center; border-width: 0px; border-style: solid; border-color: rgb(0, 0, 0); border-radius: 0px; padding: 0px; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px; line-height: 1; z-index: auto; margin-top: 0px; margin-bottom: 0px; animation: 1.2s ease 1.4s 1 normal both running zoomIn;">
+                        <div class="element-box-contents" style="width: 100%; height: 100%; overflow: hidden;">逢考必过！！</div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+</div>
+<script type="text/javascript">
+    //https://store.eqxiu.com/h5/detail/2249927?spm=ab-1533_2488-page-0-0-0,search-pc_ms_all_mqs_v2_uncontrolled-97041-20230329203803qxX5vk_A-1_84-384537-0-2_2249927
+    let vm = new Vue({
+        el: "#out",
+        data() {
+            return {
+                musicPlay: false
+            };
+        },
+        methods: {
+            handleTouchstart() {
+                if (!this.musicPlay) {
+                    this.$refs.audioRef.play()
+                } else {
+                    this.$refs.audioRef.pause()
+                }
+                this.musicPlay = !this.musicPlay
+            },
+        },
+        mounted() {
+            $('.main-page').eq(0).addClass("z-current")
+
+            let mainPageHeight = $('.main-page').eq(0).height()
+            $(".main-page").on("touchstart", (e)=> {
+                if (!this.musicPlay) {
+                    this.$refs.audioRef.play()
+                    this.musicPlay = true
+                }
+                // 判断默认行为是否可以被禁用
+                if (e.cancelable) {
+                    // 判断默认行为是否已经被禁用
+                    if (!e.defaultPrevented) {
+                        e.preventDefault();
+                    }
+                }
+                startY = e.originalEvent.changedTouches[0].pageY;
+            });
+            $(".main-page").on("touchmove", function (e) {
+                // 判断默认行为是否可以被禁用
+                if (e.cancelable) {
+                    // 判断默认行为是否已经被禁用
+                    if (!e.defaultPrevented) {
+                        e.preventDefault();
+                    }
+                }
+                let distance = e.originalEvent.changedTouches[0].pageY - startY
+                if (distance > 0) {
+                    $(e.currentTarget).prev().css({
+                        transform: `translateY(${e.originalEvent.changedTouches[0].pageY - startY - mainPageHeight}px)`
+                    })
+                    $(".main-page").removeClass("z-active");
+                    $(e.currentTarget).prev().addClass("z-active")
+                }
+
+                if (distance < 0) {
+                    $(e.currentTarget).next().css({
+                        transform: `translateY(${mainPageHeight - (startY - e.originalEvent.changedTouches[0].pageY)}px)`
+                    })
+                    $(".main-page").removeClass("z-active");
+                    $(e.currentTarget).next().addClass("z-active")
+                }
+            });
+            $(".main-page").on("touchend", function (e) {
+                // 判断默认行为是否可以被禁用
+                if (e.cancelable) {
+                    // 判断默认行为是否已经被禁用
+                    if (!e.defaultPrevented) {
+                        e.preventDefault();
+                    }
+                }
+                let distance = e.originalEvent.changedTouches[0].pageY - startY
+                if (distance > 30) {
+                    $(e.currentTarget).prev().removeAttr("style").css({
+                        transition: "all .4s linear"
+                    })
+                    $(e.currentTarget).prev().animate({
+                        transform: `translateY(0px)`,
+                    }, 400, () => {
+                        $(e.currentTarget).prev().removeAttr("style").addClass("z-current").siblings().removeClass("z-current")
+                        $(".main-page").removeClass("z-active");
+                    })
+                }
+
+                if (distance < -30) {
+                    $(e.currentTarget).next().removeAttr("style").css({
+                        transition: "all .4s linear"
+                    });
+                    $(e.currentTarget).next().animate({
+                        transform: `translateY(0px)`,
+                    }, 400, "swing", () => {
+                        $(e.currentTarget).next().removeAttr("style").addClass("z-current").siblings().removeClass("z-current")
+                        $(".main-page").removeClass("z-active");
+                    })
+                }
+
+            });
+        }
+    })
+</script>
+</body>
+</html>
