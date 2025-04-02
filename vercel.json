@@ -6,6 +6,10 @@
         {
             "source": "/love",
             "destination": "/web/"
+        },
+	         {
+            "source": "/blog",
+            "destination": "/blogindex.html"
         }
     ]
 }
