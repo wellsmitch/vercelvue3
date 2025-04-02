@@ -4,8 +4,12 @@
 	},
     "rewrites": [
         {
-            "source": "/(.*)",
+            "source": "/love",
             "destination": "/web/"
-        }
+        },
+	     {
+            "source": "/test",
+            "destination": "/testhtml/"
+        },
     ]
 }
