@@ -7,8 +7,12 @@
             "source": "/love",
             "destination": "/web/"
         },
-	         {
+	    {
             "source": "/blog/(.*)",
+            "destination": "/blog/index.html"
+        },
+		 {
+            "source": "/(.*)",
             "destination": "/blog/index.html"
         }
     ]
