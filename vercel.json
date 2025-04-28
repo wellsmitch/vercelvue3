@@ -15,7 +15,7 @@
 	 "redirects": [
 		{
 		  "source": "/(.*)",
-		  "destination": "/blog"
+		  "destination": "/blog/index.html"
 		}
 	  ]
 }
