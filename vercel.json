@@ -8,8 +8,14 @@
             "destination": "/web/"
         },
 	    {
-            "source": "/(.*)",
+            "source": "/blog",
             "destination": "/blog/index.html"
         }
-    ]
+    ],
+	 "redirects": [
+		{
+		  "source": "/(.*)",
+		  "destination": "/blog"
+		}
+	  ]
 }
