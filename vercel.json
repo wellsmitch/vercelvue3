@@ -13,7 +13,7 @@
         },
 	    {
             "source": "/qq/(.*)",
-            "destination": "https://graph.qq.com"
+			"destination": "/api/proxy"
         }
     ]
 }
