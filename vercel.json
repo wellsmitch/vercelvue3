@@ -8,8 +8,8 @@
             "destination": "/web/"
         },
 	    {
-            "source": "/blog/(.*)",
-            "destination": "/blog/index.html"
+            "source": "/qq/(.*)",
+            "destination": "https://graph.qq.com"
         }
     ]
 }
