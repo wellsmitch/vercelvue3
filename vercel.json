@@ -12,7 +12,7 @@
             "destination": "/blog/index.html"
         },
 	    {
-            "source": "/qq/(.*)",
+            "source": "/qqapi/(.*)",
 			"destination": "/api/proxy"
         }
     ]
