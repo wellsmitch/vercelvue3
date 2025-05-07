@@ -15,16 +15,5 @@
             "source": "/qqapi/(.*)",
 			"destination": "https://graph.qq.com"
         }
-    ],
-	"headers": [
-		{
-		  "source": "/(.*)",
-		  "headers": [
-			{
-			  "key": "access-control-allow-origin",
-			  "value": "*"
-			}
-		  ]
-		}
-	  ]
+    ]
 }
